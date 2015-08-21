@@ -1,0 +1,478 @@
+<!--
+	--Stewart Fullard
+	--212259632
+-->
+
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Restaurant Assignment</title>
+		<link rel="stylesheet" href="themes/Restaurant_Assignment.css" />
+		<link rel="stylesheet" href="themes/jquery.mobile.icons.min.css" />
+		<link rel="stylesheet" href="http://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.css" />
+		<script type="text/javascript" src="http://code.jquery.com/jquery-1.11.3.min.js"></script>
+		<script type="text/javascript" src="http://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.js"></script>
+	</head>
+
+	<!-- start index page -->
+	<section id="index" data-role="page" data-theme="d">
+		<div>
+		<!-- Input the header information for the page -->
+			<div data-role="header">
+				<h2>Restaurant Assignment</h2>
+			</div>
+			<!-- Input the contents of the page -->
+			<div data-role="main" class="ui-content">
+				<!-- display restaurant logo -->
+				<img src="images/Restaurant logo.png" />
+			</div>
+			<div>
+			<!-- Display navigation bar -->
+				<nav data-role="navbar"> 
+					<ul>
+						<li><a href="#index" class="ui-btn-active" data-icon="home">Home</a></li> <!-- link to index page -->
+						<li><a href="#menu" data-icon="grid">Menu</a></li> <!-- link to menu page -->
+						<li><a href="#gallery" data-icon="camera">Gallery</a></li> <!-- link to gallery page -->
+						<li><a href="#contact" data-icon="phone">Contact Us</a></li> <!-- link to contact page -->
+						<li><a href="#feedback" data-icon="mail">Feedback</a></li> <!-- link to feedback page -->
+						<li><a href="#developer" data-icon="user">Developer</a></li> <!-- link to developer page -->
+					</ul>
+				</nav>
+			</div>	
+		</div>
+	</section>
+	<!-- end index page -->
+
+	<!-- start menu page -->
+	<section id="menu" data-role="page" data-theme="d">
+		<div>
+		<!-- Input the header information for the page -->
+			<div data-role="header">
+				<h2>Menu</h2>
+			</div>
+			<!-- Input the contents of the page -->
+			<div data-role="main" class="ui-content"> 
+				<!-- display page heading -->
+				<h1> Check out our menu!</h1>
+				<!-- display menu in list form -->
+				<ul data-role="listview" data-inset="true" >
+					<li data-role="divider">Breakfast</li> <!-- list divider -->
+					<li><a href="#bigbreakfast" data-rel="dialog"> <img src="images/BigBreakfast.jpg"/> <h3>Big Breakfast</h3></a></li> <!-- link to bigbreakfast page -->
+					<li data-role="divider">Entree</li> <!-- list divider -->
+					<li><a href="#lettucetaco" data-rel="dialog"> <img src="images/LettuceTaco.jpg"/> <h3>Lettuce Taco</h3></a></li> <!-- link to lettucetaco page -->
+					<li data-role="divider">Main Course</li> <!-- list divider -->
+					<li><a href="#steaksandwich" data-rel="dialog"> <img src="images/SteakSandwich.jpg"/> <h3>Steak Sandwich</h3></a></li> <!-- link to steaksandwich page -->
+					<li><a href="#falafel" data-rel="dialog"> <img src="images/Falafels.jpeg"/> <h3>Falafels</h3></a></li> <!-- link to falafels page -->
+					<li><a href="#chickensalad" data-rel="dialog"> <img src="images/ChickenSalad.jpeg"/> <h3>Chicken Salad</h3></a></li> <!-- link to chickensalad page -->
+					<li data-role="divider">Dessert</li> <!-- list divider -->
+					<li><a href="#chocolatemousse" data-rel="dialog"> <img src="images/ChocolateMousse.jpeg"/> <h3>Chocolate Mousse</h3></a></li> <!-- link to chocolatemousse page-->
+				</ul>	
+			</div>
+			<div>
+			<!-- Display navigation bar -->
+				<nav data-role="navbar"> 
+					<ul>
+						<li><a href="#index" data-icon="home">Home</a></li> <!-- link to index page -->
+						<li><a href="#menu" class="ui-btn-active" data-icon="grid">Menu</a></li>  <!-- link to menu page -->
+						<li><a href="#gallery" data-icon="camera">Gallery</a></li> <!-- link to gallery page -->
+						<li><a href="#contact" data-icon="phone">Contact Us</a></li> <!-- link to contact page -->
+						<li><a href="#feedback" data-icon="mail">Feedback</a></li> <!-- link to feedback page -->
+						<li><a href="#developer" data-icon="user">Developer</a></li> <!-- link to developer page -->
+					</ul>
+				</nav>
+			</div>
+		</div>
+	</section>
+	<!-- end menu page -->
+
+	<!-- start gallery page -->
+	<section id="gallery" data-role="page" data-theme="d">
+		<div>
+		<!-- Input the header information for the page -->
+			<div data-role="header">
+				<h2>Gallery</h2>
+			</div>
+			<!-- Input the contents of the page -->
+			<div data-role="main" class="ui-content">
+				<!-- display grid layout b -->
+				<div class="ui-grid-b">
+				<!-- display gallery images -->
+				  <div class="ui-block-a"><img src ="images/steaksandwich.jpg" width="200"/></div> 
+				  <div class="ui-block-b"><img src ="images/LettuceTaco.jpg" width="200"/></div>
+				  <div class="ui-block-c"><img src ="images/ChocolateMousse.jpeg" width="200"/></div>
+				  <div class="ui-block-a"><img src ="images/BigBreakfast.jpg" width="200"/></div>
+				  <div class="ui-block-b"><img src ="images/Falafels.jpeg" width="200"/></div>
+				  <div class="ui-block-c"><img src ="images/ChickenSalad.jpeg" width="200"/></div>
+    			</div>
+			</div>
+			<div>
+			<!-- Display navigation bar -->
+				<nav data-role="navbar"> 
+					<ul>
+						<li><a href="#index" data-icon="home">Home</a></li> <!-- link to index page -->
+						<li><a href="#menu"data-icon="grid">Menu</a></li>  <!-- link to menu page -->
+						<li><a href="#gallery" class="ui-btn-active" data-icon="camera">Gallery</a></li> <!-- link to gallery page -->
+						<li><a href="#contact" data-icon="phone">Contact Us</a></li> <!-- link to contact page -->
+						<li><a href="#feedback" data-icon="mail">Feedback</a></li> <!-- link to feedback page -->
+						<li><a href="#developer" data-icon="user">Developer</a></li> <!-- link to developer page -->
+					</ul>
+				</nav>
+			</div>		
+		</div>
+	</section>
+	<!-- end gallery page -->
+
+	<!-- start contact page -->
+	<section id="contact" data-role="page"data-theme="d" >
+		<div>
+		<!-- Input the header information for the page -->
+			<div data-role="header">
+				<h2>Contact Us</h2>
+			</div>	
+			<!-- Input the contents of the page -->
+			<div data-role="main" class="ui-content">
+				<!-- paragraph of page contents -->
+				<p>Call us to order online today!</p>
+				<!-- Call to order button -->
+				<a href="tel:0312345678"  data-role="button" data-icon="phone"> Call us </a>
+				<!-- Map location button -->
+				<a href=https://www.google.com.au/maps/search/deakin+university/@-37.846923,145.1142463,17z?hl=en" data-role="button" data-icon="location">Find us on Google Maps</a> 	
+				<!-- display restaurant address -->
+				<address>
+					Deakin University Burwood VIC 3125
+				</address>
+				<!-- display map image with link to map location -->
+				<a href=https://www.google.com.au/maps/search/deakin+university/@-37.846923,145.1142463,17z?hl=en">
+					<img src ="images/DeakinMap.png" alt="Restaurant Location" width="500" />
+				</a>
+			</div>
+			<div>
+			<!-- Display navigation bar -->
+				<nav data-role="navbar"> 
+					<ul>
+						<li><a href="#index" data-icon="home">Home</a></li> <!-- link to index page -->
+						<li><a href="#menu" data-icon="grid">Menu</a></li>  <!-- link to menu page -->
+						<li><a href="#gallery" data-icon="camera">Gallery</a></li><!-- link to gallery page -->
+						<li><a href="#contact" class="ui-btn-active" data-icon="phone">Contact Us</a></li> <!-- link to contact page -->
+						<li><a href="#feedback" data-icon="mail">Feedback</a></li> <!-- link to feedback page -->
+						<li><a href="#developer" data-icon="user">Developer</a></li> <!-- link to developer page -->
+					</ul>
+				</nav>
+			</div>
+		</div>
+	</section>
+	<!-- end contact page -->
+
+	<!-- start feedback page -->
+	<section id="feedback" data-role="page" data-theme="d">
+		<div>
+		<!-- Input the header information for the page -->
+			<div data-role="header">
+				<h2>Feedback</h2>
+			</div>
+			<!-- Input the contents of the page -->
+			<div data-role="main" class="ui-content">
+				<!-- Display feedback form -->
+				<form>
+					<!-- form label -->
+					<label for="CustomerName">Customer Name:</label>
+						<!-- form text input -->
+						<input type ="text" name="name" id ="name" placeholder="Your name">
+					<!-- form label -->
+					<label for="ContactInformation">Contact Information: </label>
+						<!-- form text input -->
+						<input type ="text" name="contact" id ="contact" placeholder="i.e mobile phone no.">
+					<!-- form label -->
+					<label for="Feedback">Feedback:</label>
+						<!-- form textarea -->
+						<textarea name="feedback" id="feedback" placeholder="Tell us what you think"></textarea>
+					<!-- reset button -->
+					<input type="reset" value="Reset">
+					<!-- submit button -->
+					<input type ="submit" name="go" id="go" value="Submit">
+				</form>
+			</div>
+			<div>
+			<!-- Display navigation bar -->
+				<nav data-role="navbar"> 
+					<ul>
+						<li><a href="#index" data-icon="home">Home</a></li> <!-- link to index page -->
+						<li><a href="#menu" data-icon="grid">Menu</a></li>  <!-- link to menu page -->
+						<li><a href="#gallery" data-icon="camera">Gallery</a></li> <!-- link to gallery page -->
+						<li><a href="#contact" data-icon="phone">Contact Us</a></li> <!-- link to contact page -->
+						<li><a href="#feedback" class="ui-btn-active" data-icon="mail">Feedback</a></li> <!-- link to feedback page -->
+						<li><a href="#developer" data-icon="user">Developer</a></li> <!-- link to developer page -->
+					</ul>
+				</nav>
+			</div>
+		</div>
+	</section>
+	<!-- end feedback page -->
+
+	<!-- start feedback page-->
+	<section id="developer" data-role="page" data-theme="d">
+		<div>
+		<!-- Input the header information for the page -->
+			<div data-role="header">
+				<h2>Developer</h2>
+			</div>
+			<!-- Input the contents of the page -->
+			<div data-role="main" class="ui-content">
+			<!-- grid layout for page -->
+			<div class="ui-grid-a" >
+				<div class="ui-block-a">
+					<!-- developer image -->
+					<img src="images/Stewart.png" alt="developer" />
+				</div>
+				<div class="ui-block-b">
+					<!-- display collapsible -->
+					<div data-role="collapsible">
+						<h1>Name:</h1>
+						<p>Stewart Fullard</p>
+					</div>
+					<!-- display collapsible -->
+					<div data-role="collapsible">
+						<h1>Student No.</h1>
+						<p>212259632</p>
+					</div>
+					<!-- display collapsible -->
+					<div data-role="collapsible">
+						<h1>DOB</h1>
+						<p>30 Dec 1990</p>
+					</div>
+					<!-- display collapsible -->
+					<div data-role="collapsible">
+						<h1>Address</h1>
+						<p>Carrum Downs Victoria</p>
+					</div>
+					<!-- display collapsible -->
+					<div data-role="collapsible">
+						<h1>Email</h1>
+						<p>sfullard@deakin.edu.au</p>
+					</div>
+				</div> 
+			</div>
+			</div>
+			<div>
+			<!-- Display navigation bar -->
+				<nav data-role="navbar"> 
+					<ul>
+						<li><a href="#index" data-icon="home">Home</a></li> <!-- link to index page -->
+						<li><a href="#menu" data-icon="grid">Menu</a></li>  <!-- link to menu page -->
+						<li><a href="#gallery" data-icon="camera">Gallery</a></li> <!-- link to gallery page -->
+						<li><a href="#contact" data-icon="phone">Contact Us</a></li> <!-- link to contact page -->
+						<li><a href="#feedback" data-icon="mail">Feedback</a></li> <!-- link to feedback page -->
+						<li><a href="#developer" class="ui-btn-active" data-icon="user">Developer</a></li> <!-- link to developer page -->
+					</ul>
+				</nav>
+			</div>
+		</div>
+	</section>
+<!-- end feedback page -->
+
+<!-- start recipes page -->
+	<!-- start bigbreakfast -->
+	<section id="bigbreakfast" data-role="page" data-theme="d">
+		<div>
+		<!-- Input the header information for the page -->
+			<div data-role="header">
+				<h2>Big Breakfast</h2>
+			</div>
+			<!-- Input the contents of the page -->
+			<div data-role="main" class="ui-content">
+			<!-- display grid layout -->
+				<div class="ui-grid-a">
+					<div class="ui-block-a">
+					<!-- food image -->
+						<img src="images/BigBreakfast.jpg" width ="300"/>
+					</div>
+					<div class="ui-block-b">
+						<h1 align="right">$18.99</h1>
+					</div>
+				</div>
+				<!-- food heading -->
+				<h3>Big Breakfast</h3>
+				<h4>Ingredients</h4>
+				<!-- list view food ingredients -->
+				<ul>
+					<li>2 slices thickly cut ciabatta</li>
+					<li>3 eggs (poached, fried or scrambled)</li>
+					<li>1/2 truss tomato</li>
+					<li>1/2 avocado</li>
+					<li>1 cup of baby spinach</li>
+					<li>3 bacon rashes</li>
+				</ul>
+			</div>	
+		</div>
+	</section>
+	<!-- start lettucetaco -->
+	<section id="lettucetaco" data-role="page" data-theme="d">
+		<div>
+		<!-- Input the header information for the page -->
+			<div data-role="header">
+				<h2>Lettuce Taco</h2>
+			</div>
+			<!-- Input the contents of the page -->
+			<div data-role="main" class="ui-content">
+			<!-- display grid layout -->
+				<div class="ui-grid-a">
+					<div class="ui-block-a">
+					<!-- food image -->
+						<img src="images/LettuceTaco.jpg" width ="300"/>
+					</div>
+					<div class="ui-block-b">
+						<h1 align="right">$12.99</h1>
+					</div>
+				</div>
+				<!-- food heading -->
+				<h3>Lettuce Taco</h3>
+				<h4>Ingredients</h4>
+				<!-- list view food ingredients -->
+				<ul>
+					<li>3 large lettuce leaves</li>
+					<li>2 diced tomatos</li>
+					<li>1/2 cup of grated cheese</li>
+					<li>500 grams of taco mince</li>
+					<li>1 tsp of sour cream</li>
+				</ul>
+			</div>	
+		</div>
+	</section>
+	<!-- start steaksandwich -->
+	<section id="steaksandwich" data-role="page" data-theme="d">
+		<div>
+		<!-- Input the header information for the page -->
+			<div data-role="header">
+				<h2>Steak Sandwich</h2>
+			</div>
+			<!-- Input the contents of the page -->
+			<div data-role="main" class="ui-content">
+				<!-- display grid layout -->
+				<div class="ui-grid-a">
+					<div class="ui-block-a">
+					<!-- food image -->
+						<img src="images/SteakSandwich.jpg" width ="300"/>
+					</div>
+					<div class="ui-block-b">
+						<h1 align="right">$21.99</>
+					</div>
+				</div>
+				<!-- food heading -->
+				<h3>Steak Sandwich</h3>
+				<h4>Ingredients</h4>
+				<!-- list view food ingredients -->
+				<ul>
+					<li>1 turkish pocket</li>
+					<li>1 porterhouse steak</li>
+					<li>2 coz lettuce leaves</li>
+					<li>1/2 brown onion</li>
+					<li>2 slices of tomato</li>
+					<li>1 tsp tomato chutney</li>
+					<li>1/2 cup of grated cheese</li>
+				</ul>
+			</div>	
+		</div>
+	</section>
+	<!-- start falafels -->
+	<section id="falafel" data-role="page" data-theme="d">
+		<div>
+		<!-- Input the header information for the page -->
+			<div data-role="header">
+				<h2>Falafels</h2>
+			</div>
+			<!-- Input the contents of the page -->
+			<div data-role="main" class="ui-content">
+			<!-- display grid layout -->
+				<div class="ui-grid-a">
+					<div class="ui-block-a">
+					<!-- food image -->
+						<img src="images/Falafels.jpeg" width ="300"/>
+					</div>
+					<div class="ui-block-b">
+						<h1 align="right">$18.99</h1>
+					</div>
+				</div>
+				<!-- food heading -->
+				<h3>Falafels</h3>
+				<h4>Ingredients</h4>
+				<!-- list view food ingredients -->
+				<ul>
+					<li>1 cup dried chickpeas</li>
+					<li>1 small onion</li>
+					<li>1/2 bunch fresh coriander</li>
+					<li>4 garlic cloves, minced</li>
+					<li>1 tsp salt</li>
+					<li>60ml of water</li>
+				</ul>
+			</div>	
+		</div>
+	</section>
+	<!-- start chickensalad -->
+	<section id="chickensalad" data-role="page" data-theme="d">
+		<div>
+		<!-- Input the header information for the page -->
+			<div data-role="header">
+				<h2>Chicken Salad</h2>
+			</div>
+			<!-- Input the contents of the page -->
+			<div data-role="main" class="ui-content">
+			<!-- display grid layout -->
+				<div class="ui-grid-a">
+					<div class="ui-block-a">
+					<!-- food image -->
+						<img src="images/ChickenSalad.jpeg" width ="300"/>
+					</div>
+					<div class="ui-block-b">
+						<h1 align="right">$15.99</h1>
+					</div>
+				</div>
+				<!-- food heading -->
+				<h3>Chicken Salad</h3>
+				<h4>Ingredients</h4>
+				<!-- list view food ingredients -->
+				<ul>
+					<li>Grilled chicken breast</li>
+					<li>1 coz lettuce</li>
+					<li>1/2 a cup of Snow peas</li>
+					<li>1 green capsicum</li>
+					<li>1 red capsicum</li>
+					<li>1 red onion</li>
+					<li>1/2 a lemon</li>
+				</ul>
+			</div>	
+		</div>
+	</section>
+	<!-- start chocolatemousse -->
+	<section id="chocolatemousse" data-role="page" data-theme="d">
+		<div>
+		<!-- Input the header information for the page -->
+			<div data-role="header">
+				<h2>Chocolate Mousse</h2>
+			</div>
+			<!-- Input the contents of the page -->
+			<div data-role="main" class="ui-content">
+			<!-- display grid layout -->
+				<div class="ui-grid-a">
+					<div class="ui-block-a">
+					<!-- food image -->
+						<img src="images/ChocolateMousse.jpeg" width ="300"/>
+					</div>
+					<div class="ui-block-b">
+						<h1 align="right">$8.99</h1>
+					</div>
+				</div>
+				<!-- food heading -->
+				<h3>Chocolate Mousse</h3>
+				<h4>Ingredients</h4>
+				<!-- list view food ingredients -->
+				<ul>
+					<li>125g dark chocolate</li>
+					<li>4 eggs, separated</li>
+					<li>1 cup of cream</li>
+				</ul>
+			</div>	
+		</div>
+	</section>
+<!-- end recipes page -->
+
+</html>
