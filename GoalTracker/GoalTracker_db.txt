@@ -1,0 +1,110 @@
+DROP TABLE GoalTracker;
+
+	CREATE TABLE GoalTracker
+	(
+		Firstname VARCHAR2(20)NOT NULL,
+		Lastname VARCHAR2(20)NOT NULL,
+		Email VARCHAR2(50)NOT NULL,
+		Day VARCHAR2(8)NOT NULL,
+		Month VARCHAR2(9)NOT NULL,
+		Year VARCHAR2(4)NOT NULL,
+		Gender VARCHAR2(6)NOT NULL
+		);
+		
+		commit;
+		
+		
+		
+DROP TABLE Goals;
+
+	CREATE TABLE Goals
+	(
+		Goalname VARCHAR2(50)NOT NULL,
+		Time VARCHAR2(5)NOT NULL,
+		TimeType VARCHAR2(8)NOT NULL,
+		Tags VARCHAR2(1000)NOT NULL,
+		Description VARCHAR2(1000)NOT NULL,
+		Privacy VARCHAR2(7)NOT NULL,
+		Completed VARCHAR2(3)NOT NULL
+		);
+		
+		commit;
+		
+		
+DROP TABLE Reminders;
+
+	CREATE TABLE Reminders
+	(
+		Email VARCHAR2(50)NOT NULL,
+		GoalName VARCHAR2(50)NOT NULL,
+		Day VARCHAR2(8)NOT NULL,
+		Month VARCHAR2(9)NOT NULL,
+		Year VARCHAR2(4)NOT NULL,
+		Tags VARCHAR2(1000)NOT NULL,
+		Description VARCHAR2(1000)NOT NULL,
+		Privacy VARCHAR2(7)NOT NULL
+		);
+		
+		commit;
+		
+
+DROP TABLE Progress;
+
+	CREATE TABLE Progress
+	(
+		Email VARCHAR2(50)NOT NULL,
+		GoalName VARCHAR2(50)NOT NULL,
+		Day VARCHAR2(8)NOT NULL,
+		Month VARCHAR2(9)NOT NULL,
+		Year VARCHAR2(4)NOT NULL,
+		Tags VARCHAR2(1000)NOT NULL,
+		Description VARCHAR2(1000)NOT NULL,
+		Privacy VARCHAR2(7)NOT NULL,
+		Completed VARCHAR2(3)NOT NULL
+		);
+		
+		commit;
+		
+DROP TABLE Following;
+
+	CREATE TABLE Following
+	(
+		Firstname VARCHAR2(20)NOT NULL,
+		Lastname VARCHAR2(20)NOT NULL,
+		Email VARCHAR2(50)NOT NULL,
+		GoalName VARCHAR2(50)NOT NULL,
+		Day VARCHAR2(8)NOT NULL,
+		Month VARCHAR2(9)NOT NULL,
+		Year VARCHAR2(4)NOT NULL,
+		Tags VARCHAR2(1000)NOT NULL,
+		Description VARCHAR2(1000)NOT NULL,
+		Completed VARCHAR2(3)NOT NULL
+		);
+		
+		commit;
+		
+DROP TABLE Newsfeed;
+
+	CREATE TABLE Newsfeed
+	(
+		Firstname VARCHAR2(20)NOT NULL,
+		Lastname VARCHAR2(20)NOT NULL,
+		Email VARCHAR2(50)NOT NULL,
+		PostName VARCHAR2(50)NOT NULL,
+		Tags VARCHAR2(1000)NOT NULL,
+		Description VARCHAR2(1000)NOT NULL
+		);
+		
+		commit;
+		
+		
+DROP TABLE Users;
+
+	CREATE TABLE Users
+	(
+		Firstname VARCHAR2(20)NOT NULL,
+		Lastname VARCHAR2(20)NOT NULL,
+		Email VARCHAR2(50)NOT NULL
+		);
+		
+		commit;
